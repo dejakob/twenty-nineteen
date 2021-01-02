@@ -1,0 +1,51 @@
+
+
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+
+.intro {
+  &__title {
+    text-align: center;
+    font-size: 100px;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+
+    text {
+      fill: rgba(255,255,255,0.05);
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 4px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5s infinite linear;
+
+      &:nth-child(1){
+        opacity: 0.9;
+        animation-delay: -1s;
+      }
+      &:nth-child(2){
+        opacity: 0.7;
+        animation-delay: -2s;
+      }
+      &:nth-child(3){
+        opacity: 0.5;
+        animation-delay: -3s;
+      }
+      &:nth-child(4){
+        opacity: 0.3;
+        animation-delay: -4s;
+      }
+      &:nth-child(5){
+        opacity: 0.1;
+        animation-delay: -5s;
+      }
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 36px;
+  }
+}

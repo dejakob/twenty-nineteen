@@ -1,0 +1,24 @@
+@import './reset.less';
+@import './animation.less';
+@import './breakpoints.less';
+@import './colors.less';
+@import './fonts.less';
+@import './Intro/Intro.less';
+@import './Section/Section.less';
+@import './Timeline/Timeline.less';
+@import './DateIndicator/DateIndicator.less';
+@import './Story/Story.less';
+
+.app {
+  &__body {
+    background-color: @color-background;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  &__main {
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}
